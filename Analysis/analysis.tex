@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper,titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\author{Michael Ransby\\903570810}
+\title{CS3600\\\textit{Project 4}}
+
+\begin{document}
+\maketitle
+\section{Question 6: Performance}
+Connect 4 dataset has 67557 examples with a tree size of 41521, a following accuracy of $0.7577$ across 10 passes.\\
+Car dataset however has 1728 examples with a tree size of 408, with an accuracy of $0.93975$ across 20 passes.\\
+The Cars dataset tree size is a lower proportion to the number of examples, along with the higher accuracy average, when compared to the Connect 4 dataset. I believe this is due to the variables contained within the Cars dataset being better indicators of the outcome than the Connect 4 dataset. Connect 4, simply inputting the 'moves', make a highly complex dataset with similar (even canonical) games being split into different branches of the tree, a single variable has very little correlation to the outcome, resulting in (relatively) low efficiency and accuracy. \\ An example of the simplicity and high correlation within the Cars dataset is having ANY safety=low input be unacceptable. (Found through inspecting cars.out)
+
+\section{Question 7: Applications}
+\paragraph{Cars}
+A fairly obvious application of the Cars Dataset is to a car sale website (such as from NZ: trademe.co.nz), allowing for much simpler filtering of the seemingly infinite pool of available vehicles to a 'Tinder' style swipe left/right interface, learning over time which kinds of vehicles the user is interested in and making suggestions.
+
+\paragraph{Connect 4}
+Existing analysis from the Decision Tree could potentially be leveraged by a given heuristic to hint at crucial locations within the board, either consistently through every game or against certain opponents. I expect this would eventually this would distil to a "Minimax" type of behaviour by the agent.
+
+
+
+
+\end{document}

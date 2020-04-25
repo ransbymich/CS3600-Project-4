@@ -1,0 +1,47 @@
+/Users/mransby/PycharmProjects/P4/venv/bin/python /Users/mransby/PycharmProjects/P4/Testing.py
+Testing dummy dataset 1. Number of examples 20.
+Tree is as follows:
+5 = 0
+|---1
+5 = 1
+|---0
+
+
+Tree size: 3.
+
+Results for training set:
+(1.0, [])
+
+Done
+____________________________________________________________________
+
+Testing dummy dataset 2. Number of examples 20.
+Tree is as follows:
+2 = 0
+|---0 = 0
+|---|---0
+|---0 = 1
+|---|---4 = 0
+|---|---|---1
+|---|---4 = 1
+|---|---|---0
+2 = 1
+|---5 = 0
+|---|---6 = 0
+|---|---|---0
+|---|---6 = 1
+|---|---|---1
+|---5 = 1
+|---|---1
+
+
+Tree size: 11.
+
+Results for training set:
+(0.65, [(0, 1), (0, 1), (1, 0), (0, 1), (0, 1), (0, 1), (1, 0)])
+
+Done
+____________________________________________________________________
+
+
+Process finished with exit code 0
